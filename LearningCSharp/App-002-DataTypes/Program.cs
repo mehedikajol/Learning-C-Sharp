@@ -4,7 +4,7 @@ var fullNumber = 15;
 var fractionNumber = 15.00F;
 var realNumber = 15.0;
 var character = 'A';
-var realName = "Mehedi Hasan Kajol";
+var realName = "What is your name";
 
 Console.Write("Enter an integer: ");
 fullNumber = int.Parse(Console.ReadLine());
