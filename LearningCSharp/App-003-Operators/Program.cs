@@ -96,9 +96,8 @@ Console.WriteLine("Bitwise X-OR with 10: " + (number1 ^= 10));
 #endregion
 */
 
-// Increament and Decrement Operators ++ --
-
-#region
+// Increament and Decreament Operators ++ --
+#region Increament or Decreament Operators
 
 var number1 = 5;
 Console.WriteLine(number1);
@@ -120,5 +119,5 @@ Console.WriteLine(number1);
 Console.WriteLine(--number1);
 Console.WriteLine(number1 + "\n");
 
-#endregion
+#endregion 
 
