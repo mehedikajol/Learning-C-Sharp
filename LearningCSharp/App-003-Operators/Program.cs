@@ -73,6 +73,7 @@ Console.WriteLine($"Bitwise Left Shift Operation , {number1} becomes " + (number
 */
 
 // Assignment Operators = += -= *= /= %= &= |= ^=
+/*
 #region Assignment Operators
 
 var number1 = 45;
@@ -93,3 +94,31 @@ Console.WriteLine("Bitwise OR with 10: " + (number1 |= 10));
 number1 = 45;
 Console.WriteLine("Bitwise X-OR with 10: " + (number1 ^= 10));
 #endregion
+*/
+
+// Increament and Decrement Operators ++ --
+
+#region
+
+var number1 = 5;
+Console.WriteLine(number1);
+Console.WriteLine(number1++);
+Console.WriteLine(number1 + "\n");
+
+number1 = 5;
+Console.WriteLine(number1);
+Console.WriteLine(number1--);
+Console.WriteLine(number1 + "\n");
+
+number1 = 5;
+Console.WriteLine(number1);
+Console.WriteLine(++number1);
+Console.WriteLine(number1 + "\n");
+
+number1 = 5;
+Console.WriteLine(number1);
+Console.WriteLine(--number1);
+Console.WriteLine(number1 + "\n");
+
+#endregion
+
