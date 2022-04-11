@@ -100,9 +100,24 @@ while (i < 10)
 */
 
 // DO WHILE LOOP
+/*
 int i = 0;
 do
 {
     Console.WriteLine(i);
     i++;
 } while (i < 10);
+*/
+
+// FOREACH LOOP
+int[] array = new int[5];
+array[0] = 10;
+array[1] = 11;
+array[2] = 12;
+array[3] = 13;
+array[4] = 14;
+
+foreach(int i in array)
+{
+    Console.WriteLine(i);
+}
