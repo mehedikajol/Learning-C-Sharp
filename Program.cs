@@ -42,3 +42,13 @@ for( var i=0; i<=4; i++)
     Console.WriteLine(names[i]);
 }
 */
+
+// FUNCTIONS or METHODS
+/*
+static int DivideResult(int a, int b, int c, int numbers)
+{
+    return (a + b + c) / numbers;
+}
+
+Console.WriteLine(DivideResult(15, 5, 4, 5));
+*/
