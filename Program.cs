@@ -27,3 +27,18 @@ Console.WriteLine(c);
 Console.WriteLine(b);
 Console.WriteLine(a);
 */
+
+// ARRAYs
+/*
+string[] names = new string[5];
+names[0] = "Dhaka";
+names[1] = "Rajshahi";
+names[2] = "Rangpur";
+names[3] = "Sylhet";
+names[4] = "Barishal";
+
+for( var i=0; i<=4; i++)
+{
+    Console.WriteLine(names[i]);
+}
+*/
