@@ -4,16 +4,18 @@
     {
         static void Main(string[] args)
         {
-            Person kajol = new Person();
-            kajol.name = "Mehedi Hasan Kajol";
-            kajol.age = 26;
-            kajol.weight = 64.85;
-            kajol.height = 187.3;
-            Console.WriteLine($"Name: {kajol.name}, Age: {kajol.age}, Weight: {kajol.weight}, Height: {kajol.height}");
-            /*Console.WriteLine(kajol.name);
-            Console.WriteLine(kajol.age);
-            Console.WriteLine(kajol.height);
-            Console.WriteLine(kajol.weight);*/
+            Person person = new Person();
+
+            /*Console.Write("Enter Name: ");
+            string name;
+            name = Console.ReadLine();*/
+
+            person.age = 26;
+            person.weight = 64.85;
+            person.height = 187.3;
+            Console.WriteLine($"Name: {person.name}, Age: {person.age}, Weight: {person.weight}, Height: {person.height}");
+            
+            person.walk();
         }
     }
 }

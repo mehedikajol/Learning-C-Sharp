@@ -12,5 +12,19 @@ namespace DayThree
         public int age;
         public double weight;
         public double height;
+
+        public Person()
+        {
+            this.name = "PlaceHolder Name";
+        }
+
+        public Person(string name)
+        {
+            this.name = name;
+        }
+        public void walk()
+        {
+            Console.WriteLine($"{name} is walking now!");
+        }
     }
 }
