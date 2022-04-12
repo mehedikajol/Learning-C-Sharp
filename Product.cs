@@ -10,6 +10,24 @@ namespace DayFour
     {
         public string Name { get; set; }
         public string Description { get; set; }
-        public double Price { get; set; }
+        protected double _price;
+        public double Price
+        {
+            get
+            {
+                return _price;
+            }
+            set
+            {
+                if (_price >= 0)
+                    _price = value;
+                else _price = 0;
+            }
+        }
+
+        public virtual double discountAmount()
+        {
+            return _price * 15 / 100.0;
+        }
     }
 }

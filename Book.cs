@@ -9,5 +9,9 @@ namespace DayFour
     internal class Book : Product
     {
         public string Author { get; set; }
+        public override double discountAmount()
+        {
+            return _price * 25 / 100.0;
+        }
     }
 }
