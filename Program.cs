@@ -1,24 +1,21 @@
 ﻿namespace DayFive
 {
-    public class WaterBottle
+    public class Program
     {
-        public int Capacity { get; }   
-        public string Color { get; }
-        public int WaterAmount { set;get }  
-
-        public WaterBottle(int capacity, string color)
+        static void Main(string[] args)
         {
-            Capacity = capacity;
-            Color = color;
-        }
+            WaterBottle newBottle = new WaterBottle(2, "Red");
 
-        public void AddWater(int amount)
-        {
+            Console.WriteLine("Initial Amount: " + newBottle.CurrentAmount);
 
-        }
+            newBottle.AddWater(3);
+            Console.WriteLine("After adding 3 litre: " + newBottle.CurrentAmount);
 
-        public void RemoveWater(int amount)
-        {
+            newBottle.RemoveWater(4);
+            Console.WriteLine("Initial removing 4 litre: " + newBottle.CurrentAmount);
+
+            newBottle.AddWater(1);
+            Console.WriteLine("After adding 1 litre: " + newBottle.CurrentAmount);
 
         }
     }
