@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace DayFive
 {
-    public class WaterBottle : Bottle
+    public class JuiceBottle : Bottle
     {
-        public WaterBottle(int capacity, string color)
+        private string Pipe { set; get; }
+        private string Belt { set; get; }
+        public JuiceBottle(int capacity, string color)
             : base(capacity, color)
         {
-            
-        }
 
+        }
     }
 }
