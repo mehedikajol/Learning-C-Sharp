@@ -8,7 +8,7 @@ namespace Switch_Case
 {
     public class Bank
     {
-        public BankBranchStatus status{set; get;}
+        public BankBranchStatus Status{set; get;}
         
         public void PrintBankStatus(BankBranchStatus bankStatus)
         {
