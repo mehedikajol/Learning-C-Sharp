@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Generics
 {
-    public class Box
+    public class Box<T>
     {
-        public int length { set; get; }
-        public int width { set; get; } 
-        public int height { set; get; }
+        public T Length { set; get; }
+        public T Width { set; get; } 
+        public T Height { set; get; }
 
-        public int Area() => length * width;
-        public int Volume() => length * width * height;
+        // public T Area() => Length * Width;
+        // public T Volume() => Length * Width * Height;
     }
 }
