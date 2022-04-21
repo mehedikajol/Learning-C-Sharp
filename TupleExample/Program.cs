@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            
             var time = DateTime.Now;
             var name = "Beautiful Name";
             var person = (name, 26, married: false, 2.6, time);
@@ -21,7 +22,16 @@
             
             foreach (var personDetail in ListOfPersons)
                 Console.WriteLine($"Name: {personDetail.name}, Age: {personDetail.age}, Weight: {personDetail.weight}");
-
+            
+            
+            var result = GetPersonResult();
+            Console.WriteLine($"Name: {result.name}, Age: {result.age}, Course: {result.result.Subject}, Grade: {result.result.Grade}");
+        
+        }
+        
+        static (string name, int age, Result result) GetPersonResult()
+        {
+            return ("Bangladesh", 51, new Result( "c-sharp", 3.64));
         }
 
         
