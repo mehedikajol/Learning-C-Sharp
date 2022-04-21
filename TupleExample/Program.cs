@@ -31,7 +31,7 @@
         
         static (string name, int age, Result result) GetPersonResult()
         {
-            return ("Bangladesh", 51, new Result( "c-sharp", 3.64));
+            return ("Bangladesh", 51, new Result ( "c-sharp",  3.64 ));
         }
 
         
