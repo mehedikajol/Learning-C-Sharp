@@ -34,8 +34,8 @@ namespace CollectionsArrayList
             values.Add("sit");
             values.Add("amet");
 
-            foreach(var value in values)
-                Console.WriteLine(value);
+            foreach (var value in values)
+                Console.WriteLine(value)
 
         }
     }
