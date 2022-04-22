@@ -35,7 +35,7 @@ namespace CollectionsArrayList
             values.Add("amet");
 
             foreach (var value in values)
-                Console.WriteLine(value)
+                Console.WriteLine(value);
 
         }
     }
