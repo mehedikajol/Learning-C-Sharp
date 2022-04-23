@@ -11,7 +11,20 @@ namespace FileOperation
     {
         static void Main(string[] args)
         {
-            
+            var filepath = @"C:\Users\mehed\OneDrive\Documents\C-Sharp\DayNine\FileOperation\Sample.txt";
+            var isExist = File.Exists(filepath);
+
+            if (isExist)
+            {
+                var text = File.ReadAllText(filepath);
+                Console.WriteLine(text);
+
+                Console.WriteLine();
+
+                var lines = File.ReadAllLines(filepath);
+                foreach(var line in lines)
+                    Console.WriteLine($"==={line}===");
+            }
         }
     }
 }
