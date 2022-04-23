@@ -25,6 +25,8 @@ namespace FileOperation
                 foreach(var line in lines)
                     Console.WriteLine($"==={line}===");
             }
+            File.Create(@"C:\Users\mehed\OneDrive\Documents\C-Sharp\DayNine\FileOperation\NewFile.txt");
+            File.Delete(@"C:\Users\mehed\OneDrive\Documents\C-Sharp\DayNine\FileOperation\Delete.txt");
         }
     }
 }
