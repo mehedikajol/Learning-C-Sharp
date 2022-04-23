@@ -35,12 +35,19 @@ namespace FileOperation
                 File.Delete(deleteFilePath);
             else
                 Console.WriteLine("File does not exist to be deleted!");
+            Console.WriteLine();
 
             var fileInfo = new FileInfo(filepath);
             if (fileInfo.Exists)
             {
-                var text = fileInfo.Open(FileMode.Open);
-                Console.WriteLine(text);
+                var textStream = fileInfo.OpenText();
+                string line = null;
+
+                do
+                {
+                    line = textStream.ReadLine();
+                    Console.WriteLine($"***{line}***");
+                } while (line != null);
             }
 
             /*try
