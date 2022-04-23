@@ -41,7 +41,7 @@ namespace FileOperation
             if (fileInfo.Exists)
             {
                 var textStream = fileInfo.OpenText();
-                string line = null;
+                string line;
 
                 do
                 {
