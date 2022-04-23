@@ -27,13 +27,32 @@ namespace FileOperation
                 var lines = File.ReadAllLines(filepath);
                 foreach (var line in lines)
                     Console.WriteLine($"==={line}===");
+
+                Console.WriteLine();
             }
 
             if (isDeleteExist)
                 File.Delete(deleteFilePath);
             else
-                Console.WriteLine("File not exist to be deleted");
+                Console.WriteLine("File does not exist to be deleted!");
 
+            var fileInfo = new FileInfo(filepath);
+            if (fileInfo.Exists)
+            {
+                var text = fileInfo.Open(FileMode.Open);
+                Console.WriteLine(text);
+            }
+
+            /*try
+            {
+                File.Delete(deleteFilePath);
+            }catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }finally
+            {
+                Console.WriteLine("Operation done!");
+            }*/
         }
     }
 }
