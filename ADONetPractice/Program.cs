@@ -20,7 +20,7 @@ namespace ADONetPractice
             Write(updateSql);
             Write(deleteSql);
 
-            
+            /*
             var result = Read("Person");
             foreach(var row in result)
             {
@@ -42,7 +42,7 @@ namespace ADONetPractice
                     }
                 }
             }
-            
+            */
 
             _sqlConnection.Dispose();
         }
